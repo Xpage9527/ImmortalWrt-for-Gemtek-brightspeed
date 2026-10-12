@@ -1,3 +1,5 @@
+src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main
+src-git daede https://github.com/kenzok8/openwrt-daede.git;main
 src-git packages https://github.com/immortalwrt/packages.git
 src-git luci https://github.com/immortalwrt/luci.git
 src-git --directory=luci-theme-glass glass https://github.com/rchen14b/luci-theme-glass.git;main
