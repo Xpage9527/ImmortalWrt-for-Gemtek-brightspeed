@@ -78,6 +78,10 @@ jobs:
       - name: Install feeds
         run: |
           ./scripts/feeds update -a
+          rm -rf feeds/packages/net/{dae,daed}
+          rm -rf feeds/luci/applications/{luci-app-dae,luci-app-daed}
+          ./scripts/feeds install -a -f -p daede
+          ./scripts/feeds install -a -f -p nikki
           ./scripts/feeds install -a
           bash scripts/fix-stale-golang-host.sh
 
